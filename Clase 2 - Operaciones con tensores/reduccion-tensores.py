@@ -32,7 +32,7 @@ print("reduccion max: ", torch.max(array_pt))
 print("reduccion min: ", torch.min(array_pt))
 #mientras estudiaba me encontre con un error, e investigando me di cuenta
 #que mi programa intentaba hacer una media y al obtener float rompia, ya que
-#cuando lo cree arriba no habia especificado array_pt = torch.tensor([[25,2],[5,26],[3,7]])
+#cuando lo cree arriba no habia especificado si era float o entero torch.tensor([[25,2],[5,26],[3,7]])
 #asi que para imprimir le especifico el tipo de dato en el metodo torch.mean(array_pt.float())
 print("reduccion mean: ", torch.mean(array_pt.float()))
 print("reduccion prod: ", torch.prod(array_pt))
